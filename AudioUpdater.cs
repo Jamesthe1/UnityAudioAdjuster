@@ -11,13 +11,13 @@ namespace AudioAdjustments {
         // Seconds until update
         private const float maxUpdateTime = 1f;
         private float timeKeeper = 0f;
-        private const float adjustmentRange = 0.5f;
+        private const float adjustmentRange = 0.1f;
         private void UpdateAudio () {
             // Not caching this because objects are likely to be added and removed
             AudioSource[] sources = FindObjectsOfType<AudioSource> ();
             for (int i = 0; i < sources.Length; i++) {
                 float adjustment = Random.Range (-adjustmentRange, adjustmentRange);
-                sources[i].pitch = Mathf.Clamp (sources[i].pitch + adjustment, 0f, 50f);
+                sources[i].pitch = Mathf.Clamp (sources[i].pitch + adjustment, 0f, 60f);
                 sources[i].volume = Mathf.Clamp (sources[i].volume + adjustment, 0f, 1f);
             }
         }
