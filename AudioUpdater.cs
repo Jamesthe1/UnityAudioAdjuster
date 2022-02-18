@@ -11,7 +11,7 @@ namespace AudioAdjustments {
         // Seconds until update
         private const float maxUpdateTime = 1f;
         private float timeKeeper = 0f;
-        private const float adjustmentRange = 0.1f;
+        private const float adjustmentRange = 0.25f;
         private void UpdateAudio () {
             // Not caching this because objects are likely to be added and removed
             AudioSource[] sources = FindObjectsOfType<AudioSource> ();
