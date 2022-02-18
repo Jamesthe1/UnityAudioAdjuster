@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net3.5</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\DyingSun\BepInEx_Backup\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\DyingSun\BepInEx_Backup\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\DyingSun\dyingsun_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
